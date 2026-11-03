@@ -1,0 +1,15 @@
+include https://raw.githubusercontent.com/codemonstur/bobfiles/master/foss-lib-github-maven
+
+vendor: com.github.codemonstur
+name: jsass
+version: 1.0.0
+packaging: jar
+enablePreview: false
+release: 17
+description: A pure Java implementation of the Sass/SCSS compiler
+license:
+  name: Apache-2.0
+developer:
+  name: Jurgen Voorneveld
+  email: jegvoorneveld@gmail.com
+dependencies: []
