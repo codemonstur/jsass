@@ -82,8 +82,7 @@ public class SassCompiler {
         }
         input = in.getCanonicalPath();
 
-        // You can set the resolver; if none is set, VaadinResolver will be used
-        // ScssStylesheet.setStylesheetResolvers(new VaadinResolver());
+        // You can set the resolver; if none is set, the default resolver will be used
 
         SCSSErrorHandler errorHandler = new SCSSErrorHandler();
         errorHandler.setWarningsAreErrors(!ignoreWarnings);

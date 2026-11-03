@@ -21,7 +21,7 @@ import jsass.internal.parser.LexicalUnitImpl;
  * PercentageFunctionGenerator is used for converting values into percentages
  * with rounding.
  * 
- * @author Vaadin
+ * @author jsass
  */
 public class PercentageFunctionGenerator extends
         AbstractSingleParameterFunctionGenerator {

@@ -34,7 +34,7 @@ import jsass.internal.tree.Node.BuildStringStrategy;
  * SassExpressions are used for representing and evaluating arithmetic
  * expressions.
  * 
- * @author Vaadin
+ * @author jsass
  * 
  */
 public class SassExpression implements SassListItem, Serializable {

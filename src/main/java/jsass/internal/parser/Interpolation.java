@@ -33,7 +33,7 @@ import jsass.internal.tree.Node.BuildStringStrategy;
  * values and functions and expressions evaluated before calling
  * replaceInterpolation().
  * 
- * @author Vaadin
+ * @author jsass
  * 
  */
 public class Interpolation implements SassListItem, Serializable {

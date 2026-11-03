@@ -25,7 +25,7 @@ import jsass.internal.resolver.AbstractResolver;
 import jsass.internal.resolver.ClassloaderResolver;
 import jsass.internal.resolver.FilesystemResolver;
 
-public class VaadinResolverTest {
+public class JsassResolverTest {
 
     @Test
     public void testFilesystemResolverPathNormalization() throws Exception {

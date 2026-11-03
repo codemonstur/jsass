@@ -31,7 +31,7 @@ import jsass.internal.tree.Node.BuildStringStrategy;
  * from the ordinary arguments so that if it is list-valued, its contents are
  * expanded into separate arguments.
  * 
- * @author Vaadin
+ * @author jsass
  * 
  */
 public class ActualArgumentList implements Serializable {

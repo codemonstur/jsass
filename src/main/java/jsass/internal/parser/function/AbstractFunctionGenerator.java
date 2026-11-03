@@ -32,7 +32,7 @@ import jsass.internal.parser.Variable;
  * the same number of arguments and the arguments of the different functions
  * have the same names.
  * 
- * @author Vaadin
+ * @author jsass
  * 
  */
 public abstract class AbstractFunctionGenerator implements

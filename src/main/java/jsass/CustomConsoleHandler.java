@@ -22,7 +22,7 @@ import java.util.logging.LogRecord;
 
 /**
  * 
- * @author Vaadin Ltd
+ * @author jsass Ltd
  */
 public class CustomConsoleHandler extends ConsoleHandler {
 

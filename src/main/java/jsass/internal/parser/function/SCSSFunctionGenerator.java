@@ -27,7 +27,7 @@ import jsass.internal.parser.SassListItem;
  * If there are no dedicated generator for the function then default generator
  * is used.
  * 
- * @author Vaadin Ltd
+ * @author jsass Ltd
  */
 public interface SCSSFunctionGenerator {
 

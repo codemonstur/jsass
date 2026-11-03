@@ -5,9 +5,9 @@ import org.junit.Test;
 
 import jsass.AbstractTestBase;
 
-public class VaadinThemes extends AbstractTestBase {
-    String scssFolder = "/vaadin-themes/scss";
-    String cssFolder = "/vaadin-themes/css";
+public class JsassThemes extends AbstractTestBase {
+    String scssFolder = "/jsass-themes/scss";
+    String cssFolder = "/jsass-themes/css";
 
     @Test
     public void compileValo() throws Exception {

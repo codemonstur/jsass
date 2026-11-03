@@ -22,7 +22,7 @@ import jsass.internal.util.ColorUtil;
 
 /**
  * 
- * @author Vaadin Ltd
+ * @author jsass Ltd
  */
 public class LightenFunctionGenerator extends AbstractFunctionGenerator {
 

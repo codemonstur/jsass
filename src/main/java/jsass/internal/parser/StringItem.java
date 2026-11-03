@@ -24,7 +24,7 @@ import jsass.internal.tree.Node.BuildStringStrategy;
  * StringItem is a wrapper class that allows strings to be stored in lists
  * taking SassListItems.
  * 
- * @author Vaadin
+ * @author jsass
  * 
  */
 public class StringItem implements SassListItem, Serializable {

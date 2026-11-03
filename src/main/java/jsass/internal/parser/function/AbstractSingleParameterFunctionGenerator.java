@@ -25,7 +25,7 @@ import jsass.internal.parser.SassListItem;
  * implementing Sass functions that take exactly one single value parameter. A
  * single value parameter is of type LexicalUnitImpl.
  * 
- * @author Vaadin
+ * @author jsass
  * 
  */
 public abstract class AbstractSingleParameterFunctionGenerator extends

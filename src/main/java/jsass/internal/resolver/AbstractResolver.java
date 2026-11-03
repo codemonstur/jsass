@@ -31,7 +31,7 @@ import jsass.internal.ScssStylesheet;
  * an import can be relative to and helpers for extracting path information from
  * the identifier.
  * 
- * @author Vaadin Ltd
+ * @author jsass Ltd
  */
 public abstract class AbstractResolver implements ScssStylesheetResolver,
         Serializable {

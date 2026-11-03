@@ -35,7 +35,7 @@ import jsass.internal.ScssContext;
  * the number of formal arguments. In that case the value of the variable
  * argument is an empty list.
  * 
- * @author Vaadin
+ * @author jsass
  * 
  */
 public class FormalArgumentList implements Serializable, Iterable<Variable> {

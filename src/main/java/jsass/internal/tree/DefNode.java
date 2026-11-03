@@ -28,7 +28,7 @@ import jsass.internal.parser.Variable;
  * DefNode defines the shared functionality of mixin and function definition
  * nodes. This includes the handling of parameter lists.
  * 
- * @author Vaadin
+ * @author jsass
  * 
  */
 public abstract class DefNode extends Node implements Definition,

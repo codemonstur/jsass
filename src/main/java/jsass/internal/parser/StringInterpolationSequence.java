@@ -31,7 +31,7 @@ import jsass.internal.ScssContext;
  * replaceInterpolation is a StringInterpolationSequence where occurrences of
  * interpolation have been replaced with the contents of the interpolation.
  * 
- * @author Vaadin
+ * @author jsass
  * 
  */
 public class StringInterpolationSequence implements Serializable {

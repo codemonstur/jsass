@@ -36,7 +36,7 @@ import jsass.internal.visitor.MixinNodeHandler;
  * arguments, whereas a DefNode packs several arguments into a list. The
  * corresponding definition node is {@link MixinDefNode}.
  * 
- * @author Vaadin
+ * @author jsass
  */
 public class MixinNode extends Node implements IVariableNode,
         NodeWithUrlContent {
