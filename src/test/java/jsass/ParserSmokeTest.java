@@ -167,4 +167,74 @@ public class ParserSmokeTest {
     public void viewport() throws Exception {
         assertNotNull(compile("@viewport { width: 100vw; }"));
     }
+
+    @Test
+    public void variablesDefault() throws Exception {
+        assertNotNull(compile("$x: 1 !default; .a { width: $x * 1px; }"));
+    }
+
+    @Test
+    public void mixinDefaults() throws Exception {
+        assertNotNull(compile("@mixin m($x: 10px) { width: $x; } .a { @include m; } .b { @include m(20px); }"));
+    }
+
+    @Test
+    public void functionConditional() throws Exception {
+        assertNotNull(compile("@function f($x) { @if $x > 0 { @return $x; } @return 0; } .a { width: f(5px); }"));
+    }
+
+    @Test
+    public void nestedMedia() throws Exception {
+        assertNotNull(compile(".a { @media screen { color: red; } }"));
+    }
+
+    @Test
+    public void contentBlock() throws Exception {
+        assertNotNull(compile("@mixin m { @content; } .a { @include m { color: red; } }"));
+    }
+
+    @Test
+    public void ternary() throws Exception {
+        assertNotNull(compile(".a { width: if(true, 10px, 20px); }"));
+    }
+
+    @Test
+    public void math() throws Exception {
+        assertNotNull(compile(".a { width: (10px + 5px) * 2; height: 100% / 3; }"));
+    }
+
+    @Test
+    public void strings() throws Exception {
+        assertNotNull(compile(".a { content: \"hello\" + \" world\"; }"));
+    }
+
+    @Test
+    public void colors() throws Exception {
+        assertNotNull(compile(".a { color: rgb(255, 0, 0); background: rgba(0, 0, 0, 0.5); }"));
+    }
+
+    @Test
+    public void units() throws Exception {
+        assertNotNull(compile(".a { width: 100%; height: 1em; margin: 1rem; }"));
+    }
+
+    @Test
+    public void selectors() throws Exception {
+        assertNotNull(compile(".a, .b { color: red; } .a > .b { color: blue; } .a + .b { color: green; } .a ~ .b { color: yellow; }"));
+    }
+
+    @Test
+    public void pseudo() throws Exception {
+        assertNotNull(compile(".a { &:nth-child(2n) { color: red; } &:not(.b) { color: blue; } }"));
+    }
+
+    @Test
+    public void attr() throws Exception {
+        assertNotNull(compile(".a { &[type=text] { color: red; } }"));
+    }
+
+    @Test
+    public void comments() throws Exception {
+        assertNotNull(compile("/* block */ .a { // line\n color: red; }"));
+    }
 }
