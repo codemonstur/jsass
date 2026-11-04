@@ -15,6 +15,7 @@ public class ParserSmokeTest {
     private static String compile(final String scss) throws Exception {
         final var handler = new SCSSDocumentHandlerImpl();
         final var errorHandler = new SCSSErrorHandler();
+        SCSSErrorHandler.set(errorHandler);
         final var parser = new jsass.internal.parser.Parser();
         parser.setErrorHandler(errorHandler);
         parser.setDocumentHandler(handler);
@@ -80,5 +81,90 @@ public class ParserSmokeTest {
     @Test
     public void media() throws Exception {
         assertNotNull(compile("@media screen { .a { color: red; } }"));
+    }
+
+    @Test
+    public void keyframes() throws Exception {
+        assertNotNull(compile("@keyframes slide { from { left: 0; } to { left: 100px; } }"));
+    }
+
+    @Test
+    public void fontFace() throws Exception {
+        assertNotNull(compile("@font-face { font-family: x; src: url(x.woff); }"));
+    }
+
+    @Test
+    public void charset() throws Exception {
+        assertNotNull(compile("@charset \"UTF-8\"; .a { color: red; }"));
+    }
+
+    @Test
+    public void placeholder() throws Exception {
+        assertNotNull(compile("%ph { color: red; } .a { @extend %ph; }"));
+    }
+
+    @Test
+    public void parentSelector() throws Exception {
+        assertNotNull(compile(".a { &:hover { color: red; } }"));
+    }
+
+    @Test
+    public void nestedProps() throws Exception {
+        assertNotNull(compile(".a { font: { size: 12px; weight: bold; } }"));
+    }
+
+    @Test
+    public void operators() throws Exception {
+        assertNotNull(compile(".a { width: 10px + 5px; height: 20px - 3px; margin: 2px * 3; padding: 10px / 2; }"));
+    }
+
+    @Test
+    public void interpolation() throws Exception {
+        assertNotNull(compile("$name: foo; .#{$name} { color: red; }"));
+    }
+
+    @Test
+    public void lists() throws Exception {
+        assertNotNull(compile("$l: 1, 2, 3; .a { z-index: nth($l, 2); }"));
+    }
+
+    @Test
+    public void maps() throws Exception {
+        assertNotNull(compile("$m: (a: 1, b: 2); .a { width: 1px; }"));
+    }
+
+    @Test
+    public void colorFuncs() throws Exception {
+        assertNotNull(compile(".a { color: lighten(red, 10%); background: darken(blue, 5%); }"));
+    }
+
+    @Test
+    public void stringFuncs() throws Exception {
+        assertNotNull(compile(".a { content: quote(hello); }"));
+    }
+
+    @Test
+    public void atRoot() throws Exception {
+        assertNotNull(compile(".a { @at-root .b { color: red; } }"));
+    }
+
+    @Test
+    public void supports() throws Exception {
+        assertNotNull(compile("@supports (display: grid) { .a { display: grid; } }"));
+    }
+
+    @Test
+    public void document() throws Exception {
+        assertNotNull(compile("@document url(http://example.com) { .a { color: red; } }"));
+    }
+
+    @Test
+    public void page() throws Exception {
+        assertNotNull(compile("@page { margin: 1cm; }"));
+    }
+
+    @Test
+    public void viewport() throws Exception {
+        assertNotNull(compile("@viewport { width: 100vw; }"));
     }
 }
