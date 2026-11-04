@@ -9,7 +9,8 @@ import org.w3c.css.sac.ErrorHandler;
 
 public class SCSSErrorHandler implements ErrorHandler {
 
-    private static ThreadLocal<SCSSErrorHandler> current = new ThreadLocal<SCSSErrorHandler>();
+    private static ThreadLocal<SCSSErrorHandler> current =
+            ThreadLocal.withInitial(SCSSErrorHandler::new);
 
     public static void set(SCSSErrorHandler h) {
         current.set(h);
