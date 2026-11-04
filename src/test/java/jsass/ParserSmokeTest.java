@@ -237,4 +237,120 @@ public class ParserSmokeTest {
     public void comments() throws Exception {
         assertNotNull(compile("/* block */ .a { // line\n color: red; }"));
     }
+
+    @Test
+    public void variablesGlobal() throws Exception {
+        assertNotNull(compile("$x: 1 !global; .a { width: $x * 1px; }"));
+    }
+
+    @Test
+    public void defaultArgs() throws Exception {
+        assertNotNull(compile("@mixin m($a: 1, $b: 2) { width: $a + $b; } .x { @include m; }"));
+    }
+
+    @Test
+    public void restArgs() throws Exception {
+        assertNotNull(compile("@mixin m($args...) { } .x { @include m(1, 2, 3); }"));
+    }
+
+    @Test
+    public void keywordArgs() throws Exception {
+        assertNotNull(compile("@mixin m($x: 1) { width: $x; } .x { @include m($x: 5px); }"));
+    }
+
+    @Test
+    public void nestedImport() throws Exception {
+        assertNotNull(compile(".a { @import \"x\"; }"));
+    }
+
+    @Test
+    public void cssImport() throws Exception {
+        assertNotNull(compile("@import url(\"x.css\");"));
+    }
+
+    @Test
+    public void mediaNested() throws Exception {
+        assertNotNull(compile(".a { @media (min-width: 10px) { color: red; } }"));
+    }
+
+    @Test
+    public void supportsNested() throws Exception {
+        assertNotNull(compile(".a { @supports (color: red) { color: red; } }"));
+    }
+
+    @Test
+    public void fontFaceNested() throws Exception {
+        assertNotNull(compile(".a { @font-face { font-family: x; } }"));
+    }
+
+    @Test
+    public void keyframesNested() throws Exception {
+        assertNotNull(compile(".a { @keyframes x { 0% { opacity: 0; } 100% { opacity: 1; } } }"));
+    }
+
+    @Test
+    public void pageNested() throws Exception {
+        assertNotNull(compile(".a { @page { margin: 1cm; } }"));
+    }
+
+    @Test
+    public void documentNested() throws Exception {
+        assertNotNull(compile(".a { @document url(x) { color: red; } }"));
+    }
+
+    @Test
+    public void viewportNested() throws Exception {
+        assertNotNull(compile(".a { @viewport { width: 100vw; } }"));
+    }
+
+    @Test
+    public void charsetNested() throws Exception {
+        assertNotNull(compile(".a { @charset \"UTF-8\"; }"));
+    }
+
+    @Test
+    public void debug() throws Exception {
+        assertNotNull(compile(".a { @debug 1 + 2; }"));
+    }
+
+    @Test
+    public void warn() throws Exception {
+        assertNotNull(compile(".a { @warn \"x\"; }"));
+    }
+
+    @Test
+    public void error() throws Exception {
+        assertNotNull(compile(".a { @error \"x\"; }"));
+    }
+
+    @Test
+    public void returnStmt() throws Exception {
+        assertNotNull(compile("@function f($x) { @return $x; } .a { width: f(1px); }"));
+    }
+
+    @Test
+    public void ifNested() throws Exception {
+        assertNotNull(compile(".a { @if true { color: red; } @else if false { color: blue; } @else { color: green; } }"));
+    }
+
+    @Test
+    public void forNested() throws Exception {
+        assertNotNull(compile(".a { @for $i from 1 to 3 { .x-#{$i} { width: 10px; } } }"));
+    }
+
+    @Test
+    public void whileNested() throws Exception {
+        assertNotNull(compile("$i: 1; .a { @while $i < 3 { .x-#{$i} { width: 10px; } $i: $i + 1; } }"));
+    }
+
+    @Test
+    public void eachNested() throws Exception {
+        assertNotNull(compile(".a { @each $k, $v in (a: 1, b: 2) { .#{$k} { width: $v * 1px; } } }"));
+    }
+
+    @Test
+    public void extendOptional() throws Exception {
+        assertNotNull(compile(".a { color: red; } .b { @extend .a !optional; }"));
+    }
+
 }
