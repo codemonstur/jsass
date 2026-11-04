@@ -2,9 +2,6 @@ package jsass.internal.tree;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import jsass.internal.ScssContext;
 import jsass.internal.parser.ActualArgumentList;
@@ -99,9 +96,7 @@ public class MixinNode extends Node implements IVariableNode,
             // inner scope is managed by MixinNodeHandler
             return MixinNodeHandler.traverse(context, this);
         } catch (Exception e) {
-            Logger.getLogger(getClass().getName()).log(Level.SEVERE, null, e);
-            // TODO is ignoring this exception appropriate?
-            return Collections.emptyList();
+            throw e instanceof RuntimeException re ? re : new IllegalStateException(e);
         }
     }
 
