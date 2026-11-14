@@ -7,8 +7,8 @@ import jsass.internal.tree.Node.BuildStringStrategy;
 
 /**
  * Interpolation represents a single instance of interpolation. The string
- * representation of an Interpolation object is "#{<expression>}" (without
- * quotes) where <expression> is the textual representation of the expression of
+ * representation of an Interpolation object is "#{&lt;expression&gt;}" (without
+ * quotes) where &lt;expression&gt; is the textual representation of the expression of
  * the interpolation.
  * 
  * An Interpolation object is evaluated by calling replaceInterpolation(). The

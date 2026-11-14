@@ -6,7 +6,7 @@ import jsass.internal.parser.SassListItem;
 
 /**
  * Generator class is used to handle SCSS functions. Generator is applied to the
- * function lexical unit if its method {@link #getFunctionName()} returns name
+ * function lexical unit if its method {@link #getFunctionNames()} returns name
  * of the function.
  * 
  * If there are no dedicated generator for the function then default generator

@@ -53,8 +53,7 @@ import jsass.internal.util.StringUtil;
 /**
  * @version $Revision: 1.3 $
  * @author Philippe Le Hegaret
- * 
- * @modified Sebastian Nyholm @ Vaadin Ltd
+ * @author Sebastian Nyholm, Vaadin Ltd
  */
 public class LexicalUnitImpl implements LexicalUnit, SCSSLexicalUnit,
         SassListItem, Serializable {

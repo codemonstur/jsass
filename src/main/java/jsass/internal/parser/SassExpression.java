@@ -177,7 +177,7 @@ public class SassExpression implements SassListItem, Serializable {
      *            A list.
      * @param startIndex
      *            The first index included in the search.
-     * @return The smallest index i such that i >= startIndex && list.get(i)
+     * @return The smallest index i such that i &gt;= startIndex &amp;&amp; list.get(i)
      *         does not represent whitespace. If no such index exists, returns
      *         list.size().
      */

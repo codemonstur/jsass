@@ -127,7 +127,7 @@ public class StringUtil {
      * 
      * @param text
      *            text to be checked
-     * @Param varName SCSS variable name to be checked. (Without '$' sign)
+     * @param varName SCSS variable name to be checked. (Without '$' sign)
      * @return true if the text contains the SCSS variable, false if not
      */
     public static boolean containsVariable(String text, String varName) {
@@ -156,7 +156,7 @@ public class StringUtil {
      * 
      * @param text
      *            text to be checked
-     * @Param sub Sub String to be checked.
+     * @param sub Sub String to be checked.
      * @return true if the text contains the sub string, false if not
      */
     public static boolean containsSubString(String text, String sub) {

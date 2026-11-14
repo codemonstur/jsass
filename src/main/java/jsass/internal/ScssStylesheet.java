@@ -44,10 +44,7 @@ public class ScssStylesheet extends Node {
     private List<String> sourceUris = new ArrayList<String>();
 
     /**
-     * Read in a file SCSS and parse it into a ScssStylesheet
-     * 
-     * @param file
-     * @throws IOException
+     * Creates an empty stylesheet.
      */
     public ScssStylesheet() {
         super();
@@ -271,7 +268,7 @@ public class ScssStylesheet extends Node {
 
     /**
      * Traverses a node and its children recursively, calling all the
-     * appropriate handlers via {@link Node#traverse()}.
+     * appropriate handlers via {@link Node#traverse(ScssContext)}.
      * 
      * The node itself may be removed during the traversal and replaced with
      * other nodes at the same position or later on the child list of its

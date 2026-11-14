@@ -20,6 +20,8 @@ public final class Generic_CharStream implements CharStream {
 
     private boolean prevCharIsCR = false;
     private boolean prevCharIsLF = false;
+    private boolean trackLineColumn = true;
+    private int tabSize = 8;
 
     private java.io.Reader reader;
 
@@ -202,6 +204,42 @@ public final class Generic_CharStream implements CharStream {
 
     public final int getBeginLine() {
         return bufline[tokenBegin];
+    }
+
+    /**
+     * Sets the number of columns a tab character occupies.
+     *
+     * @param tabSize the tab width in columns
+     */
+    public void setTabSize(int tabSize) {
+        this.tabSize = tabSize;
+    }
+
+    /**
+     * Returns the number of columns a tab character occupies.
+     *
+     * @return the tab width in columns
+     */
+    public int getTabSize() {
+        return tabSize;
+    }
+
+    /**
+     * Returns whether line and column tracking is enabled.
+     *
+     * @return true when line and column tracking is enabled
+     */
+    public boolean getTrackLineColumn() {
+        return trackLineColumn;
+    }
+
+    /**
+     * Enables or disables line and column tracking.
+     *
+     * @param trackLineColumn true to enable line and column tracking
+     */
+    public void setTrackLineColumn(boolean trackLineColumn) {
+        this.trackLineColumn = trackLineColumn;
     }
 
     public final void backup(int amount) {

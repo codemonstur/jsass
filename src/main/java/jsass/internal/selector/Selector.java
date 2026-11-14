@@ -152,13 +152,13 @@ public class Selector implements Serializable {
 
     /**
      * Combine a parent selector with this selector, replacing parent reference
-     * selectors (&-selector) in this with replacement if any and return the
+     * selectors (&amp;-selector) in this with replacement if any and return the
      * modified copy of this. If there are no parent reference selectors, simply
      * concatenates the parent selector and this with the DESCENDANT
      * relationship.
      * 
      * @param replacement
-     *            replacement selector, or null in which case & is just removed
+     *            replacement selector, or null in which case &amp; is just removed
      * @return modified copy of this with parent selector prepended or
      *         substituted for the parent reference selector
      */

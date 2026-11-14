@@ -40,16 +40,17 @@ mutation: ## Run mutation tests on the unit tests
 
 benchmark: ## Run the JMH benchmark suite
 	@$(INFO) "Running JMH benchmarks"
-	@mvn -q test-compile
+	@mvn test-compile
 	@mvn exec:java -Dexec.classpathScope=test
 
-validate: ## Check dependency versions, cves, licenses, and code quality
+validate: ## Check dependency versions, cves, licenses, javadoc, and code quality
 	@mvn com.github.codemonstur:maven-check-pom:1.0.0:check validate
 	@mvn com.github.codemonstur:maven-check-pom:1.0.0:reorder
 	@mvn versions:display-dependency-updates "-Dmaven.version.ignore=(?i).*(alpha|beta|rc|-m[0-9]+|snapshot).*"
 	@mvn versions:display-plugin-updates
 	@mvn verify -P vulnerabilities,licenses -DskipTests -T 1C
 	@mvn validate -P codequality
+	@mvn -DskipTests javadoc:javadoc
 
 release-notes: ## Write release notes in src/docs/releases for the current version
 	@mkdir -p src/docs/releases
@@ -59,6 +60,11 @@ release-notes: ## Write release notes in src/docs/releases for the current versi
 	@git log --pretty="%s" $(PREVIOUS_TAG)... master >> src/docs/releases/release-$(VERSION).txt
 
 deploy: ## Clean, build and deploy a version to Github and Maven Central
+	@if [ ! -f src/docs/releases/release-$(VERSION).txt ]; then \
+		$(INFO) "Release notes not found: src/docs/releases/release-$(VERSION).txt" >&2; \
+		$(INFO) "Write the release notes by hand before deploying." >&2; \
+		exit 1; \
+	fi
 	@$(INFO) "Uploading to maven central"
 	@mvn clean deploy
 	@$(INFO) "Creating github release"

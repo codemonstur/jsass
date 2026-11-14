@@ -1,0 +1,4143 @@
+{
+  "target": "/home/jurgen/projects/libraries/jsass",
+  "files": 172,
+  "unixTimestamp": 1794697069,
+  "iso8601": "2026-11-14T22:57:49.978000744Z",
+  "generatedAt": "Saturday, November 14, 2026 22:57:49 UTC",
+  "durationMillis": 2591,
+  "duration": "2.591 s",
+  "score": 91.2,
+  "checks": [
+    {
+      "id": "long-file",
+      "description": "Files should stay under 150 lines, counting Javadoc as one",
+      "filesChecked": 172,
+      "filesFailing": 21,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": 482
+        },
+        {
+          "path": "src/main/java/jsass/internal/Scope.java",
+          "line": 229
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": 385
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/BinaryOperator.java",
+          "line": 216
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandlerImpl.java",
+          "line": 402
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ActualArgumentList.java",
+          "line": 214
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/FormalArgumentList.java",
+          "line": 333
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": 360
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": 1106
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": 250
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": 329
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassList.java",
+          "line": 324
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AdjustColorFunctionGenerator.java",
+          "line": 216
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": 382
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelectorSequence.java",
+          "line": 289
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": 275
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": 587
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/StringUtil.java",
+          "line": 223
+        },
+        {
+          "path": "src/test/java/jsass/ParserSmokeTest.java",
+          "line": 356
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/AbstractDirectoryScanningSassTests.java",
+          "line": 153
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/W3ConformanceTests.java",
+          "line": 222
+        }
+      ]
+    },
+    {
+      "id": "long-line",
+      "description": "Lines should stay under 120 characters",
+      "filesChecked": 172,
+      "filesFailing": 7,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": 262
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": 177
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ImportNodeHandler.java",
+          "line": 91
+        },
+        {
+          "path": "src/test/java/jsass/ParserSmokeTest.java",
+          "line": 223
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/AutomaticSassTestsBroken.java",
+          "line": 53
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/MixinExtraParameters.java",
+          "line": 20
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassLangTestsBroken.java",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "id": "blank-lines",
+      "description": "Avoid multiple consecutive blank lines",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "trailing-whitespace",
+      "description": "Lines should not have trailing whitespace",
+      "filesChecked": 172,
+      "filesFailing": 59,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": 36
+        },
+        {
+          "path": "src/main/java/jsass/CustomConsoleHandler.java",
+          "line": 9
+        },
+        {
+          "path": "src/main/java/jsass/internal/Scope.java",
+          "line": 34
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssContext.java",
+          "line": 37
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": 57
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/BinaryExpression.java",
+          "line": 12
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/BinaryOperator.java",
+          "line": 185
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ActualArgumentList.java",
+          "line": 18
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/FormalArgumentList.java",
+          "line": 22
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Interpolation.java",
+          "line": 13
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": 207
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/MediaListImpl.java",
+          "line": 14
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": 13
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": 21
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassList.java",
+          "line": 86
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassListItem.java",
+          "line": 11
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringInterpolationSequence.java",
+          "line": 13
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringItem.java",
+          "line": 11
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Variable.java",
+          "line": 10
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AbstractFunctionGenerator.java",
+          "line": 19
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AbstractSingleParameterFunctionGenerator.java",
+          "line": 12
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AdjustColorFunctionGenerator.java",
+          "line": 150
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/DarkenFunctionGenerator.java",
+          "line": 9
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/LightenFunctionGenerator.java",
+          "line": 9
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/PercentageFunctionGenerator.java",
+          "line": 8
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/SCSSFunctionGenerator.java",
+          "line": 11
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/AbstractResolver.java",
+          "line": 17
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/FilesystemResolver.java",
+          "line": 22
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/ScssStylesheetResolver.java",
+          "line": 15
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/AttributeSelector.java",
+          "line": 8
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/ClassSelector.java",
+          "line": 8
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/IdSelector.java",
+          "line": 8
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/ParentSelector.java",
+          "line": 8
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/PseudoClassSelector.java",
+          "line": 9
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/PseudoElementSelector.java",
+          "line": 8
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": 17
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelector.java",
+          "line": 9
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelectorSequence.java",
+          "line": 13
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/TypeSelector.java",
+          "line": 8
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/UniversalSelector.java",
+          "line": 8
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/BlockNode.java",
+          "line": 42
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ContentNode.java",
+          "line": 2
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/DefNode.java",
+          "line": 15
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MixinDefNode.java",
+          "line": 31
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MixinNode.java",
+          "line": 14
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": 38
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/NodeWithUrlContent.java",
+          "line": 21
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ReturnNode.java",
+          "line": 43
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/SimpleNode.java",
+          "line": 14
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": 50
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/StringUtil.java",
+          "line": 127
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/BlockNodeHandler.java",
+          "line": 17
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ExtendNodeHandler.java",
+          "line": 21
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/Extension.java",
+          "line": 16
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/LoopNodeHandler.java",
+          "line": 18
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/NestedNodeHandler.java",
+          "line": 12
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/WhileNodeHandler.java",
+          "line": 20
+        },
+        {
+          "path": "src/test/java/jsass/AbstractTestBase.java",
+          "line": 44
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassTestRunner.java",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "id": "tab-indent",
+      "description": "Indent with spaces, not tabs",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "newline-eof",
+      "description": "Files should end with a newline",
+      "filesChecked": 172,
+      "filesFailing": 27,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/expression/ArithmeticExpressionEvaluator.java",
+          "line": 106
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ArgumentList.java",
+          "line": 127
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Interpolation.java",
+          "line": 157
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassListItem.java",
+          "line": 132
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringInterpolationSequence.java",
+          "line": 159
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringItem.java",
+          "line": 109
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AbstractFunctionGenerator.java",
+          "line": 186
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AdjustColorFunctionGenerator.java",
+          "line": 216
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ColorComponentFunctionGenerator.java",
+          "line": 74
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/GrayscaleFunctionGenerator.java",
+          "line": 31
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/IfFunctionGenerator.java",
+          "line": 58
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListAppendFunctionGenerator.java",
+          "line": 40
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListIndexFunctionGenerator.java",
+          "line": 41
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/MixFunctionGenerator.java",
+          "line": 70
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/PercentageFunctionGenerator.java",
+          "line": 32
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/QuoteUnquoteFunctionGenerator.java",
+          "line": 51
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/SaturationModificationFunctionGenerator.java",
+          "line": 72
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/UnitFunctionGenerator.java",
+          "line": 26
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/UnitlessFunctionGenerator.java",
+          "line": 28
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/PseudoClassSelector.java",
+          "line": 58
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/KeyframesNode.java",
+          "line": 62
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/NodeWithUrlContent.java",
+          "line": 26
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/IfNode.java",
+          "line": 50
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/Extension.java",
+          "line": 50
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/NestedNodeHandler.java",
+          "line": 35
+        },
+        {
+          "path": "src/test/java/jsass/ParserSmokeTest.java",
+          "line": 356
+        },
+        {
+          "path": "src/test/java/jsass/SassCompilerTest.java",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "id": "empty-file",
+      "description": "Files should not be empty",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "star-imports",
+      "description": "Avoid wildcard (star) imports",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "unused-imports",
+      "description": "Remove unused imports",
+      "filesChecked": 172,
+      "filesFailing": 6,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/tree/BlockNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ExtendNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/IfElseDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ImportNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/MixinNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/ParserSmokeTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "class-name-case",
+      "description": "Class names should be PascalCase",
+      "filesChecked": 172,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "method-name-case",
+      "description": "Method/field names should be camelCase",
+      "filesChecked": 172,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/W3ConformanceTests.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "exception-name",
+      "description": "Exceptions should not end in Exception",
+      "filesChecked": 172,
+      "filesFailing": 6,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/expression/exception/ArithmeticException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/exception/IncompatibleUnitsException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/JumpException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SCSSParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ThrowedParseException.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "oop-name",
+      "description": "Avoid OOP-role suffixes in class names",
+      "filesChecked": 172,
+      "filesFailing": 22,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/CustomConsoleHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandlerImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSErrorHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LocatorImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/MediaListImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SelectorListImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/StringUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/BlockNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/EachNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ExtendNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ForNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/IfElseNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ImportNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/LoopNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/MixinNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/NestedNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/VariableNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/WhileNodeHandler.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "long-names",
+      "description": "Avoid overly long class/method names",
+      "filesChecked": 172,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/parser/function/TransparencyModificationFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/tree/ImportNodeTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "single-letter-var",
+      "description": "Avoid single-letter variable names",
+      "filesChecked": 172,
+      "filesFailing": 25,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSErrorHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Interpolation.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LocatorImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Variable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/MixFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SelectorSet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelectorSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/BlockNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ExtendNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/IfElseDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ExtendNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/WhileNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/AbstractDirectoryScanningSassTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassTestRunner.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/W3ConformanceTests.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "constant-naming",
+      "description": "static final fields should be UPPER_SNAKE_CASE",
+      "filesChecked": 172,
+      "filesFailing": 21,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/JumpException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/MediaListImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ThrowedParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/ParentSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/UniversalSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/BlockNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ExtendNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ImportNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MediaNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MixinDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MixinNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/NestPropertiesNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/RuleNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/VariableNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/EachDefNode.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "boolean-method-name",
+      "description": "Boolean methods should start with is/has/can/should",
+      "filesChecked": 172,
+      "filesFailing": 17,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/Scope.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Interpolation.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassListItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringInterpolationSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AbstractFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AdjustColorFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelectorSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/StringUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/WhileNodeHandler.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "default-package",
+      "description": "Classes should declare a package",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "reverse-dns-package",
+      "description": "Avoid reverse-DNS style package names",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "long-method",
+      "description": "Methods should stay under 50 lines",
+      "filesChecked": 172,
+      "filesFailing": 10,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/SassCompiler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/ArithmeticExpressionEvaluator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ActualArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AdjustColorFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ImportNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Mixins.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Variables.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "too-many-parameters",
+      "description": "Methods should take at most 5 parameters",
+      "filesChecked": 172,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "deep-nesting",
+      "description": "Avoid deeply nested blocks (max 4)",
+      "filesChecked": 172,
+      "filesFailing": 7,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/expression/ArithmeticExpressionEvaluator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ColorComponentFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/TypeOfFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/BlockNodeHandler.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "high-complexity",
+      "description": "Methods should stay under cyclomatic complexity 10",
+      "filesChecked": 172,
+      "filesFailing": 8,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/ArithmeticExpressionEvaluator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AdjustColorFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/TypeOfFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ImportNodeHandler.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "many-returns",
+      "description": "Avoid methods with too many returns",
+      "filesChecked": 172,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ImportNodeHandler.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "else-if-chain",
+      "description": "Avoid long else-if chains",
+      "filesChecked": 172,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ColorComponentFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/TypeOfFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "enhanced-for",
+      "description": "Use enhanced for-loops over index loops",
+      "filesChecked": 172,
+      "filesFailing": 12,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/ArithmeticExpressionEvaluator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/FormalArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListIndexFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/MinMaxFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RectFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/AbstractResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ImportNodeHandler.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "inner-class-depth",
+      "description": "Avoid deeply nested classes",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "large-class",
+      "description": "Classes should stay under 40 methods+fields",
+      "filesChecked": 172,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandlerImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/ParserSmokeTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "too-many-public-methods",
+      "description": "Classes should have at most 10 public methods",
+      "filesChecked": 172,
+      "filesFailing": 20,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/ScssContext.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandlerImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ActualArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Interpolation.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassListItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelectorSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/BlockNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ImportNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/RuleNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/VariableNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/ParserSmokeTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "public-mutable-field",
+      "description": "Avoid public non-final fields",
+      "filesChecked": 172,
+      "filesFailing": 6,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/expression/BinaryExpression.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/BinaryOperator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/Extension.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "mutable-static",
+      "description": "Avoid non-final static fields",
+      "filesChecked": 172,
+      "filesFailing": 32,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/expression/ArithmeticExpressionEvaluator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSErrorHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LocatorImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AbsFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AdjustColorFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AlphaFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/CeilFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ColorComponentFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/DarkenFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/FloorFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/GrayscaleFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/IfFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/LightenFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListAppendFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListIndexFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListJoinFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListLengthFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListNthFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/MinMaxFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/MixFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/PercentageFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/QuoteUnquoteFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RGBFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RectFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RoundFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/SaturationModificationFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/TransparencyModificationFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/TypeOfFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/UnitFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/UnitlessFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "missing-equals-hashcode",
+      "description": "Override equals and hashCode together",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "getters-setters",
+      "description": "Avoid getters and setters (expose behavior, not state)",
+      "filesChecked": 172,
+      "filesFailing": 49,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/Definition.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/Scope.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssContext.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/ArithmeticExpressionEvaluator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSErrorHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ActualArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/FormalArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassListItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringInterpolationSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Variable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AbstractFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/SCSSFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/AttributeSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/ClassSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/IdSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/PlaceholderSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/PseudoClassSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/PseudoElementSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelectorSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/TypeSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/BlockNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/CommentNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/DefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ExtendNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ImportNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MediaNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MixinNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/NestPropertiesNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ReturnNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/RuleNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/VariableNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/EachDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/ForNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/IfElseNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/WhileNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/AutomaticSassTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/AutomaticSassTestsBroken.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassLangTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassLangTestsBroken.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/W3ConformanceTests.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "boolean-parameter",
+      "description": "Avoid boolean parameters",
+      "filesChecked": 172,
+      "filesFailing": 21,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/Scope.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/BinaryOperator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandlerImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSErrorHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ActualArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/FormalArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Interpolation.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassListItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AbstractFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/BlockNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MediaNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/RuleNode.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "string-equality",
+      "description": "Compare Strings with .equals, not \u003d\u003d",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "space-indent",
+      "description": "Indent with an even number of spaces",
+      "filesChecked": 172,
+      "filesFailing": 17,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/CustomConsoleHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ActualArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ColorComponentFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RectFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/AbstractResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/FilesystemResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelectorSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ContentNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/RuleNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/VariableNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/StringUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ExtendNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/internal/expression/ArithmeticExpressionEvaluatorTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/W3ConformanceTests.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "license-header",
+      "description": "Avoid license boilerplate at the top of files",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "final-parameters",
+      "description": "Method parameters should be declared final",
+      "filesChecked": 172,
+      "filesFailing": 135,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/CustomConsoleHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/SassCompiler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/Scope.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssContext.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/ArithmeticExpressionEvaluator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/BinaryOperator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/exception/ArithmeticException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/exception/IncompatibleUnitsException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandlerImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSErrorHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ActualArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/FormalArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Interpolation.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LocatorImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/MediaListImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassListItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SelectorListImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringInterpolationSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Variable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AbsFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AbstractFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AbstractSingleParameterFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AdjustColorFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AlphaFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/CeilFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ColorComponentFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/DarkenFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/DefaultFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/FloorFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/GrayscaleFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/IfFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/LightenFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListAppendFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListIndexFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListJoinFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListLengthFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListNthFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/MinMaxFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/MixFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/PercentageFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/QuoteUnquoteFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RGBFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RectFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RoundFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/SCSSFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/SaturationModificationFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/TransparencyModificationFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/TypeOfFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/UnitFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/UnitlessFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/AbstractResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/ClassloaderResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/FilesystemResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/ScssStylesheetResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/AttributeSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/ClassSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/IdSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/ParentSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/PlaceholderSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/PseudoClassSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/PseudoElementSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelectorSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/TypeSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/UniversalSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/BlockNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/CommentNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ConsoleMessageNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ContentNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/DefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ExtendNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/FontFaceNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/FunctionCall.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/FunctionDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/IVariableNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ImportNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/KeyframeSelectorNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/KeyframesNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MediaNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MicrosoftRuleNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MixinDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MixinNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/NestPropertiesNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/NodeWithUrlContent.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ReturnNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/RuleNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/SimpleNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/VariableNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/EachDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/ElseNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/ForNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/IfElseDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/IfNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/TemporaryNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/WhileNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/StringUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/BlockNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/EachNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ExtendNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ForNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/IfElseNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ImportNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/LoopNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/MixinNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/NestedNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/VariableNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/Visitor.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/WhileNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/AbstractTestBase.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/internal/expression/ArithmeticExpressionEvaluatorTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/resolvers/JsassResolverTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/AbstractDirectoryScanningSassTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/AutomaticSassTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/AutomaticSassTestsBroken.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/CompassImports.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassLangTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassLangTestsBroken.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassTestRunner.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/UrlModes.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/W3ConformanceTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/tree/ImportNodeTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "magic-number",
+      "description": "Avoid magic numbers",
+      "filesChecked": 172,
+      "filesFailing": 15,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/expression/BinaryOperator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/MediaListImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AdjustColorFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/MixFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/PercentageFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RGBFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RectFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/SaturationModificationFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelectorSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "deprecated-api",
+      "description": "Avoid deprecated constructors/APIs",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "suppress-warnings",
+      "description": "Avoid @SuppressWarnings",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "missing-javadoc",
+      "description": "Public classes/methods should have Javadoc",
+      "filesChecked": 172,
+      "filesFailing": 159,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/CustomConsoleHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/SassCompiler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/Definition.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/Scope.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssContext.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/ArithmeticExpressionEvaluator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/BinaryExpression.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/BinaryOperator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/exception/ArithmeticException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/exception/IncompatibleUnitsException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandlerImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSErrorHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ActualArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/FormalArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Interpolation.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LocatorImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/MediaListImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SCSSLexicalUnit.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SCSSParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassExpression.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassListItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SelectorListImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringInterpolationSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/StringItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Variable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AbsFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AbstractFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AdjustColorFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/AlphaFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/CeilFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ColorComponentFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/DefaultFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/FloorFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/GrayscaleFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/IfFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListAppendFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListIndexFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListJoinFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListLengthFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListNthFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/MinMaxFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/MixFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/QuoteUnquoteFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RGBFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RectFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/RoundFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/SaturationModificationFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/TransparencyModificationFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/TypeOfFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/UnitFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/UnitlessFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/AbstractResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/ClassloaderResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/FilesystemResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/ScssStylesheetResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/AttributeSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/ClassSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Combinator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/IdSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/ParentSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/PlaceholderSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/PseudoClassSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/PseudoElementSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SelectorSet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelectorSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/TypeSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/UniversalSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/BlockNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/CommentNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ConsoleMessageNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ContentNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/DefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ExtendNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/FontFaceNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/FunctionCall.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/FunctionDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/IVariableNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ImportNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/KeyframeSelectorNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/KeyframesNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MediaNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MicrosoftRuleNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MixinDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MixinNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/NestPropertiesNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ReturnNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/RuleNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/SimpleNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/VariableNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/EachDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/ElseNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/ForNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/IfElseDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/IfElseNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/IfNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/TemporaryNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/WhileNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/StringUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/BlockNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/EachNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ExtendNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/Extension.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ForNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/IfElseNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ImportNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/MixinNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/NestedNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/VariableNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/Visitor.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/WhileNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/AbstractTestBase.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/ParserSmokeTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/SassCompilerTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/internal/expression/ArithmeticExpressionEvaluatorTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/internal/util/StringUtilTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/parser/ParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/resolvers/JsassResolverTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/css/EmptyBlock.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/css/Interpolation.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/css/Media.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/css/Properties.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/css/Reindeer.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/css/Selectors.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/AbstractDirectoryScanningSassTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/AutomaticSassTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/AutomaticSassTestsBroken.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Comments.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/CompassImports.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/ControlDirectives.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Extends.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Functions.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Imports.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/JsassThemes.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/MixinExtraParameters.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Mixins.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/NestedProperties.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Nesting.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/ParentImports.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/ParentSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassLangTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassLangTestsBroken.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassTestRunner.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/UrlModes.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/VariableGuarded.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Variables.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/W3ConformanceTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/tree/ImportNodeTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "author-tag",
+      "description": "Avoid @author tags",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "private-field-javadoc",
+      "description": "Avoid Javadoc on private fields",
+      "filesChecked": 172,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/ScssContext.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/MediaListImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "empty-catch",
+      "description": "Avoid empty catch blocks",
+      "filesChecked": 172,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/parser/LocatorImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/AutomaticSassTestsBroken.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassLangTestsBroken.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "empty-finally",
+      "description": "Avoid empty finally blocks",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "empty-method",
+      "description": "Avoid empty method bodies",
+      "filesChecked": 172,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandlerImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ExtendNode.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "catch-general",
+      "description": "Avoid catching broad Exception/Throwable",
+      "filesChecked": 172,
+      "filesFailing": 12,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/SassCompiler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/Generic_CharStream.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LocatorImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/BlockNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ExtendNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/FunctionCall.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MixinNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/IfElseDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/visitor/ImportNodeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/parser/ParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/MixinExtraParameters.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/SassTestRunner.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "return-null",
+      "description": "Avoid returning null",
+      "filesChecked": 172,
+      "filesFailing": 19,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/Scope.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/expression/BinaryOperator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/MediaListImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SelectorListImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/DefaultFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/ListFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/ClassloaderResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/FilesystemResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelectorSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/NestPropertiesNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/ElseNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/StringUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/W3ConformanceTests.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "switch-fallthrough",
+      "description": "Avoid switch case fall-through",
+      "filesChecked": 172,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "switch-default",
+      "description": "Switch statements should have a default",
+      "filesChecked": 172,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "optional-get",
+      "description": "Avoid Optional.get() without isPresent()",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "raw-types",
+      "description": "Avoid raw generic types",
+      "filesChecked": 172,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/util/StringUtil.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "print-stack-trace",
+      "description": "Avoid printStackTrace()",
+      "filesChecked": 172,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "system-out",
+      "description": "Avoid System.out/err (use a logger)",
+      "filesChecked": 172,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/build/CoverageSummary.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/SassCompiler.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/W3ConformanceTests.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "commented-out-code",
+      "description": "Avoid commented-out code",
+      "filesChecked": 172,
+      "filesFailing": 8,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/ArgumentParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ActualArgumentList.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/resolver/AbstractResolver.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/BlockNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/W3ConformanceTests.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "todo-fixme",
+      "description": "No leftover TODO/FIXME/XXX markers",
+      "filesChecked": 172,
+      "filesFailing": 11,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/handler/SCSSDocumentHandlerImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/SassListItem.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/TypeOfFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/Selector.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/selector/SimpleSelectorSequence.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/DefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ExtendNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/FunctionCall.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "hardcoded-secret",
+      "description": "Avoid hardcoded secrets/credentials",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "weak-hash",
+      "description": "Avoid weak hash algorithms (MD5/SHA1)",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "sql-concat",
+      "description": "Avoid SQL string concatenation",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "test-no-assertions",
+      "description": "Test methods should contain assertions",
+      "filesChecked": 172,
+      "filesFailing": 19,
+      "violations": [
+        {
+          "path": "src/test/java/jsass/internal/expression/ArithmeticExpressionEvaluatorTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/resolvers/JsassResolverTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/css/EmptyBlock.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/css/Media.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/css/Properties.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/css/Reindeer.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/css/Selectors.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Comments.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/CompassImports.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/ControlDirectives.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Extends.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Functions.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Imports.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Mixins.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/NestedProperties.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Nesting.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/ParentSelector.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/UrlModes.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/jsass/testcases/scss/Variables.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "thread-sleep-test",
+      "description": "Avoid Thread.sleep in tests",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "ignored-test",
+      "description": "Avoid @Ignore/@Disabled tests",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "empty-test",
+      "description": "Avoid empty test methods",
+      "filesChecked": 172,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "unused-private",
+      "description": "Remove unused private fields/methods",
+      "filesChecked": 172,
+      "filesFailing": 19,
+      "violations": [
+        {
+          "path": "src/main/java/jsass/internal/ScssStylesheet.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/JumpException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/LexicalUnitImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/MediaListImpl.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/ThrowedParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/parser/function/TransparencyModificationFunctionGenerator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/BlockNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ExtendNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/ImportNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MediaNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MixinDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/MixinNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/NestPropertiesNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/Node.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/RuleNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/VariableNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/tree/controldirective/EachDefNode.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jsass/internal/util/ColorUtil.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "license",
+      "description": "Project must have a LICENSE file",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "readme",
+      "description": "Project must have a README file",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "build-file",
+      "description": "Project must have a build file (pom.xml or Gradle)",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "too-many-deps",
+      "description": "Keep dependencies under 20",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "snapshot-deps",
+      "description": "Avoid -SNAPSHOT/dynamic dependency versions",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "missing-dep-version",
+      "description": "Every dependency should declare a version",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "library-no-deps",
+      "description": "Libraries should have zero non-test dependencies (plugins exempt)",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "single-class-package",
+      "description": "Packages should contain more than one file",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/home/jurgen/projects/libraries/jsass",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "mixed-package",
+      "description": "A package should hold either files or sub-packages, not both",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/home/jurgen/projects/libraries/jsass",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "package-too-large",
+      "description": "Keep packages under 30 classes",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/home/jurgen/projects/libraries/jsass",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "circular-packages",
+      "description": "Avoid circular package dependencies",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/home/jurgen/projects/libraries/jsass",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "long-inheritance",
+      "description": "Avoid inheritance chains deeper than 3",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "no-tests",
+      "description": "Project should include tests",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "test-ratio",
+      "description": "Keep a reasonable test-to-source ratio",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "untested-classes",
+      "description": "Every main class should have a test",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/home/jurgen/projects/libraries/jsass",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "test-assertion-ratio",
+      "description": "Test methods should contain at least 33% assertions",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/home/jurgen/projects/libraries/jsass",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "duplicated-code",
+      "description": "Avoid duplicated code blocks across files",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/home/jurgen/projects/libraries/jsass",
+          "line": -1
+        }
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "id": "loc",
+      "description": "Total physical lines",
+      "value": 16258
+    },
+    {
+      "id": "sloc",
+      "description": "Source lines, excluding blanks and comments",
+      "value": 11393
+    },
+    {
+      "id": "max-file-length",
+      "description": "Longest file, in lines",
+      "value": 1106
+    },
+    {
+      "id": "cyclomatic-total",
+      "description": "Sum of cyclomatic complexity over all methods",
+      "value": 2183
+    },
+    {
+      "id": "cyclomatic-mean",
+      "description": "Mean cyclomatic complexity per method",
+      "value": 1.9421708185053381
+    },
+    {
+      "id": "cyclomatic-max",
+      "description": "Highest cyclomatic complexity of any method",
+      "value": 41
+    },
+    {
+      "id": "max-nesting",
+      "description": "Deepest control-flow nesting, in blocks",
+      "value": 9
+    },
+    {
+      "id": "halstead-volume",
+      "description": "Halstead volume of the whole codebase",
+      "value": 249429.8574005073
+    },
+    {
+      "id": "total-imports",
+      "description": "Total import statements",
+      "value": 1080
+    },
+    {
+      "id": "unique-imports",
+      "description": "Distinct import statements",
+      "value": 198
+    },
+    {
+      "id": "avg-imports-per-type",
+      "description": "Average import statements per top-level type",
+      "value": 6.27906976744186
+    },
+    {
+      "id": "comment-ratio",
+      "description": "Comment lines, percent of all lines",
+      "value": 14.792717431418378
+    },
+    {
+      "id": "javadoc-coverage",
+      "description": "Public types and methods with Javadoc, percent",
+      "value": 17.251184834123222
+    },
+    {
+      "id": "parse-failure-rate",
+      "description": "Files that failed to parse, percent",
+      "value": 0
+    },
+    {
+      "id": "maintainability-index",
+      "description": "Maintainability index, 0-100",
+      "value": 93.82798946688054
+    },
+    {
+      "id": "package-instability",
+      "description": "Mean package instability Ce/(Ca+Ce), percent",
+      "value": 59.962109422893725
+    },
+    {
+      "id": "commits",
+      "description": "Commits in history",
+      "value": 381
+    },
+    {
+      "id": "churn",
+      "description": "Lines added and deleted across history",
+      "value": 475182
+    },
+    {
+      "id": "hotspot-index",
+      "description": "Highest churn times complexity of any file",
+      "value": 23496
+    },
+    {
+      "id": "test-methods",
+      "description": "Number of test methods",
+      "value": 134
+    },
+    {
+      "id": "test-assertions",
+      "description": "Assertion calls in test methods",
+      "value": 224
+    },
+    {
+      "id": "test-assertion-density",
+      "description": "Assertions per statement in test methods",
+      "value": 0.5185185185185185
+    }
+  ],
+  "categories": [
+    {
+      "name": "documentation",
+      "score": 68.6
+    },
+    {
+      "name": "coverage",
+      "score": 68.9
+    },
+    {
+      "name": "structure",
+      "score": 76.8
+    },
+    {
+      "name": "style",
+      "score": 83.8
+    },
+    {
+      "name": "dead code",
+      "score": 89.0
+    },
+    {
+      "name": "design",
+      "score": 90.5
+    },
+    {
+      "name": "format",
+      "score": 90.5
+    },
+    {
+      "name": "naming",
+      "score": 94.4
+    },
+    {
+      "name": "noise",
+      "score": 96.5
+    },
+    {
+      "name": "complexity",
+      "score": 96.7
+    },
+    {
+      "name": "tests",
+      "score": 97.2
+    },
+    {
+      "name": "control flow",
+      "score": 97.5
+    },
+    {
+      "name": "imports",
+      "score": 98.3
+    },
+    {
+      "name": "duplication",
+      "score": 98.5
+    },
+    {
+      "name": "project",
+      "score": 100.0
+    },
+    {
+      "name": "dependencies",
+      "score": 100.0
+    },
+    {
+      "name": "library",
+      "score": 100.0
+    },
+    {
+      "name": "security",
+      "score": 100.0
+    }
+  ]
+}
