@@ -276,8 +276,9 @@
                         <reuseForks>false</reuseForks>
                         <excludes>
                         </excludes>
-                        <systemProperties>
-                        </systemProperties>
+                        <systemPropertyVariables>
+                            <java.util.logging.config.file>${project.basedir}/src/test/resources/test-logging.properties</java.util.logging.config.file>
+                        </systemPropertyVariables>
                     </configuration>
                 </plugin>
             </plugins>
