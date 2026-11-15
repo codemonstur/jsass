@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.codemonstur</groupId>
@@ -9,9 +8,7 @@
     <packaging>jar</packaging>
 
     <name>Vaadin Sass Compiler</name>
-    <description>
-        A pure Java implementation of the http://sass-lang.com compiler
-    </description>
+    <description>A pure Java implementation of the http://sass-lang.com compiler</description>
     <url>http://vaadin.com/</url>
 
     <inceptionYear>2013</inceptionYear>
@@ -28,9 +25,10 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:https://github.com/vaadin/sass-compiler.git</connection>
-        <developerConnection>scm:git:ssh://dev.vaadin.com:29418/sass-compiler</developerConnection>
-        <url>http://github.com/vaadin/sass-compiler</url>
+        <connection>scm:git:https://github.com/codemonstur/jsass.git</connection>
+        <developerConnection>scm:git:https://github.com/codemonstur/jsass.git</developerConnection>
+        <url>https://github.com/codemonstur/jsass</url>
+        <tag>HEAD</tag>
     </scm>
 
     <developers>
@@ -44,14 +42,28 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.version>[3.9.0,)</maven.version>
-        <version.plugin.enforcer>3.7.0</version.plugin.enforcer>
-        <version.plugin.gpg>3.2.8</version.plugin.gpg>
-        <version.plugin.javadoc>3.12.0</version.plugin.javadoc>
-        <version.plugin.publish>0.12.0</version.plugin.publish>
-        <version.plugin.source>3.4.0</version.plugin.source>
+
+        <version.library.commons-io>2.22.0</version.library.commons-io>
+        <version.library.flute>1.3.0.gg2</version.library.flute>
+        <version.library.jsoup>1.24.1</version.library.jsoup>
+        <version.library.junit>4.13.2</version.library.junit>
+        <version.library.sac>1.3</version.library.sac>
+        <version.library.yuicompressor>2.4.8</version.library.yuicompressor>
+
+        <version.plugin.bundle>6.2.0</version.plugin.bundle>
         <version.plugin.check-cves>1.2.0</version.plugin.check-cves>
         <version.plugin.check-license>1.5.0</version.plugin.check-license>
         <version.plugin.codegrade>0.2.0</version.plugin.codegrade>
+        <version.plugin.compiler>3.16.0</version.plugin.compiler>
+        <version.plugin.enforcer>3.7.0</version.plugin.enforcer>
+        <version.plugin.gpg>3.2.8</version.plugin.gpg>
+        <version.plugin.jar>3.5.1</version.plugin.jar>
+        <version.plugin.javacc>3.3.0</version.plugin.javacc>
+        <version.plugin.javadoc>3.12.0</version.plugin.javadoc>
+        <version.plugin.publish>0.12.0</version.plugin.publish>
+        <version.plugin.resources>3.5.0</version.plugin.resources>
+        <version.plugin.source>3.4.0</version.plugin.source>
+        <version.plugin.surefire>3.6.1</version.plugin.surefire>
     </properties>
 
     <dependencies>
@@ -59,19 +71,21 @@
         <dependency>
             <groupId>org.w3c.css</groupId>
             <artifactId>sac</artifactId>
-            <version>1.3</version>
+            <version>${version.library.sac}</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>com.vaadin.external.flute</groupId>
             <artifactId>flute</artifactId>
-            <version>1.3.0.gg2</version>
+            <version>${version.library.flute}</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>com.yahoo.platform.yui</groupId>
             <artifactId>yuicompressor</artifactId>
-            <version>2.4.8</version>
+            <version>${version.library.yuicompressor}</version>
             <scope>compile</scope>
         </dependency>
 
@@ -79,39 +93,32 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.2</version>
+            <version>${version.library.junit}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
-            <version>1.24.1</version>
+            <version>${version.library.jsoup}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.22.0</version>
+            <version>${version.library.commons-io}</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-            </resource>
-
-        </resources>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>3.5.0</version>
+                <version>${version.plugin.resources}</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
                 </configuration>
@@ -119,7 +126,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.16.0</version>
+                <version>${version.plugin.compiler}</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
                     <release>17</release>
@@ -129,7 +136,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.5.1</version>
+                <version>${version.plugin.jar}</version>
                 <configuration>
                     <archive>
                         <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
@@ -147,7 +154,7 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
-                <version>6.2.0</version>
+                <version>${version.plugin.bundle}</version>
                 <executions>
                     <execution>
                         <id>bundle-manifest</id>
@@ -158,6 +165,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -193,24 +201,6 @@
             </plugin>
 
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>${version.plugin.gpg}</version>
-                <configuration>
-                    <passphrase>${gpg.passphrase}</passphrase>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
                 <version>${version.plugin.publish}</version>
@@ -224,7 +214,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>javacc-maven-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>${version.plugin.javacc}</version>
                 <executions>
                     <execution>
                         <id>javacc</id>
@@ -267,7 +257,7 @@
             <plugins>
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.6.1</version>
+                    <version>${version.plugin.surefire}</version>
                     <configuration>
                         <includes>
                             <include>**/*.java</include>
@@ -286,6 +276,37 @@
     </build>
 
     <profiles>
+
+        <profile>
+            <id>release</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>${version.plugin.gpg}</version>
+                        <configuration>
+                            <passphrase>${gpg.passphrase}</passphrase>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                </plugins>
+            </build>
+        </profile>
+
         <profile>
             <id>licenses</id>
             <activation>

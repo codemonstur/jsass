@@ -1,0 +1,10 @@
+1.0.0
+
+First release of the maintained fork of Vaadin's sass-compiler
+Renamed the package from com.vaadin.sass to jsass
+Updated the Maven build, plugins, and dependencies for modern JDKs
+Fixed NullPointerException in SCSSErrorHandler on newer JDKs
+Stopped MixinNode from silently swallowing exceptions
+Removed remaining Vaadin references and renamed bundled themes to jsass-themes
+Added parser and compiler smoke tests
+Silenced logging output from the test suite
